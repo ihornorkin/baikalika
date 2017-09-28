@@ -8,14 +8,14 @@
 		padding: 6rem 0;
 	}
 	h2 {
-		color: $white-two;
+		color: $peacock-blue;
 		margin-bottom: 1.6rem;
 	}
 	&__description {
 		font-size: 2rem;
 		font-weight: 500;
 		line-height: 1.35;
-		color: $white;
+		color: $cerulean;
 		margin-bottom: 9rem;
 		letter-spacing: 1px;
 		@media (max-width: $tablet) {
@@ -28,7 +28,7 @@
 	&__tags {
 		font-size: 4rem;
 		font-weight: bold;
-		color: $white;
+		color: $darkish-blue;
 		list-style: none;
 		padding-left: 8rem;
 		margin-top: 7rem;

@@ -11,12 +11,14 @@ header {
 		}
 	}
 	.logo {
+		height: $logo_height;
+		width: $logo_width;
 		text-align: right;
+		background-image: url($logo_image);
+		background-repeat: no-repeat;
+		background-position: $logo_offset_x $logo_offset_y;
 		@media (max-width: $mobile) {
-			text-align: center;
-		}
-		img {
-			display: inline-block;
+			margin: 0 auto;
 		}
 	}
 }

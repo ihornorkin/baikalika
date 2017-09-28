@@ -1,0 +1,229 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$drop_round_name: 'Drop-round';
+$drop_round_x: 636px;
+$drop_round_y: 348px;
+$drop_round_offset_x: -636px;
+$drop_round_offset_y: -348px;
+$drop_round_width: 22px;
+$drop_round_height: 32px;
+$drop_round_total_width: 671px;
+$drop_round_total_height: 641px;
+$drop_round_image: '../images/sprites/sprite.png';
+$drop_round: (636px, 348px, -636px, -348px, 22px, 32px, 671px, 641px, '../images/sprites/sprite.png', 'Drop-round', );
+$drop_white_name: 'Drop-white';
+$drop_white_x: 604px;
+$drop_white_y: 348px;
+$drop_white_offset_x: -604px;
+$drop_white_offset_y: -348px;
+$drop_white_width: 24px;
+$drop_white_height: 34px;
+$drop_white_total_width: 671px;
+$drop_white_total_height: 641px;
+$drop_white_image: '../images/sprites/sprite.png';
+$drop_white: (604px, 348px, -604px, -348px, 24px, 34px, 671px, 641px, '../images/sprites/sprite.png', 'Drop-white', );
+$logo_name: 'Logo';
+$logo_x: 162px;
+$logo_y: 536px;
+$logo_offset_x: -162px;
+$logo_offset_y: -536px;
+$logo_width: 150px;
+$logo_height: 50px;
+$logo_total_width: 671px;
+$logo_total_height: 641px;
+$logo_image: '../images/sprites/sprite.png';
+$logo: (162px, 536px, -162px, -536px, 150px, 50px, 671px, 641px, '../images/sprites/sprite.png', 'Logo', );
+$bkl_name: 'bkl';
+$bkl_x: 503px;
+$bkl_y: 176px;
+$bkl_offset_x: -503px;
+$bkl_offset_y: -176px;
+$bkl_width: 164px;
+$bkl_height: 164px;
+$bkl_total_width: 671px;
+$bkl_total_height: 641px;
+$bkl_image: '../images/sprites/sprite.png';
+$bkl: (503px, 176px, -503px, -176px, 164px, 164px, 671px, 641px, '../images/sprites/sprite.png', 'bkl', );
+$gear_name: 'gear';
+$gear_x: 503px;
+$gear_y: 0px;
+$gear_offset_x: -503px;
+$gear_offset_y: 0px;
+$gear_width: 168px;
+$gear_height: 168px;
+$gear_total_width: 671px;
+$gear_total_height: 641px;
+$gear_image: '../images/sprites/sprite.png';
+$gear: (503px, 0px, -503px, 0px, 168px, 168px, 671px, 641px, '../images/sprites/sprite.png', 'gear', );
+$lab_name: 'lab';
+$lab_x: 0px;
+$lab_y: 485px;
+$lab_offset_x: 0px;
+$lab_offset_y: -485px;
+$lab_width: 154px;
+$lab_height: 156px;
+$lab_total_width: 671px;
+$lab_total_height: 641px;
+$lab_image: '../images/sprites/sprite.png';
+$lab: (0px, 485px, 0px, -485px, 154px, 156px, 671px, 641px, '../images/sprites/sprite.png', 'lab', );
+$splash_1_name: 'splash-1';
+$splash_1_x: 0px;
+$splash_1_y: 0px;
+$splash_1_offset_x: 0px;
+$splash_1_offset_y: 0px;
+$splash_1_width: 495px;
+$splash_1_height: 477px;
+$splash_1_total_width: 671px;
+$splash_1_total_height: 641px;
+$splash_1_image: '../images/sprites/sprite.png';
+$splash_1: (0px, 0px, 0px, 0px, 495px, 477px, 671px, 641px, '../images/sprites/sprite.png', 'splash-1', );
+$text_logo_name: 'text-logo';
+$text_logo_x: 162px;
+$text_logo_y: 485px;
+$text_logo_offset_x: -162px;
+$text_logo_offset_y: -485px;
+$text_logo_width: 238px;
+$text_logo_height: 43px;
+$text_logo_total_width: 671px;
+$text_logo_total_height: 641px;
+$text_logo_image: '../images/sprites/sprite.png';
+$text_logo: (162px, 485px, -162px, -485px, 238px, 43px, 671px, 641px, '../images/sprites/sprite.png', 'text-logo', );
+$token_big_name: 'token-big';
+$token_big_x: 503px;
+$token_big_y: 348px;
+$token_big_offset_x: -503px;
+$token_big_offset_y: -348px;
+$token_big_width: 93px;
+$token_big_height: 93px;
+$token_big_total_width: 671px;
+$token_big_total_height: 641px;
+$token_big_image: '../images/sprites/sprite.png';
+$token_big: (503px, 348px, -503px, -348px, 93px, 93px, 671px, 641px, '../images/sprites/sprite.png', 'token-big', );
+$sp_sprite_width: 671px;
+$sp_sprite_height: 641px;
+$sp_sprite_image: '../images/sprites/sprite.png';
+$sp_sprite_sprites: ($drop_round, $drop_white, $logo, $bkl, $gear, $lab, $splash_1, $text_logo, $token_big, );
+$sp_sprite: (671px, 641px, '../images/sprites/sprite.png', $sp_sprite_sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
