@@ -1,0 +1,8 @@
+mixin subscribe(title, desk)
+	+b.subscribe-form
+		form
+			+e.P.__title #{title}
+			+e.P.__desk #{desk}
+			+e.input
+				+e.INPUT.__field(type="text" placeholder="Your e-mail")
+				+e.BUTTON.__send.btn(type="submit") Sign-up to the pre-sale

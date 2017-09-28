@@ -1,0 +1,33 @@
+include /blocks/head/head
+include /blocks/body/body
+include /blocks/scripts/scripts
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/about/about
+include /blocks/know/know
+include /blocks/work/work
+include /blocks/token/token
+include /blocks/subscribe/subscribe
+include /blocks/roadmap/roadmap
+include /blocks/diagram/diagram
+
+block head
+	- var pageTitle = 'Baikalika';
+
+doctype html
+html(lang='ru')
+	+head
+	+body
+		+header
+		+about
+		+know
+		+work
+		+token
+		.subscribe-input
+			+subscribe('Crowdsale starts 1 November, 2017', 'Follow our project updates', 'form-subscribe')
+		+roadmap
+		+diagram
+		+footer
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		+scripts(['app.min.js'])

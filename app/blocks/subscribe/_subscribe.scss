@@ -1,0 +1,54 @@
+.subscribe-form {
+	&__title {
+		font-size: 4rem;
+		font-weight: bold;
+		letter-spacing: 0.2rem;
+		margin-bottom: 3rem;
+		text-align: center;
+		color: $white;
+		text-shadow: 0 0.2rem 0.3rem $navy;
+		@media (max-width: $mobile) {
+			font-size: 2.5rem;
+		}
+	}
+	&__desk {
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 1.35;
+		text-align: center;
+		color: $white;
+	}
+	&__input {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: $mobile) {
+			flex-wrap: wrap;
+		}
+	}
+	&__field {
+		border-radius: 5px;
+		background-color: rgba(27, 30, 58, 0.2);
+		border: solid 1px $light-blue-grey;
+		font-size: 2.0rem;
+		font-weight: 500;
+		line-height: 1.35;
+		letter-spacing: 1px;
+		color: $light-blue-grey;
+		padding: 0 2rem;
+		height: 5.6rem;
+		width: 35%;
+		margin-right: 1.5rem;
+		@media (max-width: $mobile) {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+	&__send {
+		@media (max-width: $mobile) {
+			margin-top: 1rem;
+		}
+	}
+}
+

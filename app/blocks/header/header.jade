@@ -1,0 +1,55 @@
+include ../subscribe/subscribe
+
+mixin header()
+	+b.HEADER(id="home")
+		.container
+			.row
+				.col-md-2
+					.logo
+						img(src='images/Logo.png' alt='logo')
+				.col-md-3
+					+b.UL.social
+						+e.LI.__link
+							a
+								i.fa.fa-medium
+						+e.LI.__link
+							a
+								i.fa.fa-bitcoin
+						+e.LI.__link
+							a
+								i.fa.fa-facebook
+						+e.LI.__link
+							a
+								i.fa.fa-twitter
+						+e.LI.__link
+							a
+								i.fa.fa-youtube
+						+e.LI.__link
+							a
+								i.fa.fa-reddit
+						+e.LI.__link
+							a
+								i.fa.fa-telegram
+						+e.LI.__link
+							a
+								i.fa.fa-slack
+				.col-md-6
+					+b.NAV.navigations
+						+e.A.__link(href = '#home') Home
+						+e.A.__link(href = '#tokens') TOKENs
+						+e.A.__link(href = '#roadmap') roadmap
+						+e.A.__link(href = '#contacts') Contact
+				.col-md-1.language-wrap
+					+b.UL.language
+						+e.LI.__element-toggle.__element-toggle-active
+							a(href='#') EN
+						+e.LI.__element-toggle
+							a(href='#') CH
+			.main-header-content
+				.row
+					.col-md-12
+						img.text-logo(src='images/text-logo.png' alt='Text logo')
+						h2 Blockchain technologies for Baikal water mining and distribution
+					.col-md-12
+						+subscribe('Interested in purchasing BAIKALIKA tokens?')
+						button.btn.btn-two Download Project White Paper

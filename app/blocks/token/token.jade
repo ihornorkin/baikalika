@@ -1,0 +1,28 @@
+include ../timer/timer
+
+mixin token()
+	+b.SECTION.token(id="tokens")
+		.container
+			.row
+				.col-md-12
+					h2.text-center BAIKALIKA Token Sale
+				+timer
+				.col-md-12
+					+e.title.H2.text-center Crowdsale Campaign Targets:
+				.col-md-12.text-center
+					+e.UL.list
+						+e.LI.item
+							img(src="images/splash-1.png")
+							+e.contents
+								h3 Soft cap:
+								p <span>$</span> 20 000 000
+						+e.LI.item
+							img(src="images/splash-1.png")
+							+e.contents
+								h3 Hard cap:
+								p <span>$</span> 40 000 000
+						+e.LI.item
+							img(src="images/splash-1.png")
+							+e.contents
+								h3 Total token supply
+								p <span>$</span> 1BN

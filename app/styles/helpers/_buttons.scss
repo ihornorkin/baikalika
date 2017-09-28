@@ -1,0 +1,55 @@
+.btn {
+	border-radius: 5px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to bottom, $white, #1762a3);
+	font-size: 1.7rem;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	text-align: center;
+	color: $dark-blue-grey;
+	text-shadow: 0px 1px 1px $white-50;
+	padding: 0 3.6rem;
+	height: 5.6rem;
+	text-transform: uppercase;
+	transition: 0.4s ease;
+	position: relative;
+	z-index: 3;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: $dark-slate-blue-50;
+		z-index: -1;
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+}
+
+button.btn {
+	&:hover,
+	&:focus {
+		border-color: $dark-slate-blue-50;
+		color: $dark-blue-grey;
+		color: $white;
+		&:before {
+			opacity: 1;
+		}
+		outline: none;
+	}
+}
+
+.btn-two {
+	background-image: linear-gradient($dark-sky-blue-38, rgba(55, 166, 214, 0.38)), linear-gradient(to bottom, $dark-sky-blue, $cerulean);
+	box-shadow: 0px 3px 8px 0 $dark-slate-blue-50, 0px 3px 46px 0 $twilight-blue-50, inset -0px -1px 0 0 $twilight-blue-50-two, inset 0px 1px 0 0 $light-blue-grey-two;
+	color: $white;
+	text-shadow: 0px 1px 1px $darkish-blue-50;
+}
+
+button.btn-two {
+	&:hover,
+	&:focus {
+		color: $dark-sky-blue;
+	}
+}

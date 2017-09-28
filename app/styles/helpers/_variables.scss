@@ -1,0 +1,53 @@
+// *****************************************************************************
+// Fonts
+// *****************************************************************************
+
+$base-font: 'Helvetica Neue', Arial, sans-serif;
+$main-font: 'Raleway', $base-font;
+$new-font: 'Roboto', $base-font;
+
+// *****************************************************************************
+// Colors
+// *****************************************************************************
+
+$white: #ffffff;
+$white-70: rgba(254, 254, 254, 0.7);
+$white-50: rgba(255, 255, 255, 0.5);
+$light-blue-grey: #b3cbe1;
+$dark: #1b1e3a;
+$darkish-blue-50: rgba(0, 76, 148, 0.5);
+$cerulean: #0073bb;
+$dark-sky-blue: #3db7e4;
+$dark-sky-blue-38: rgba(55, 166, 214, 0.38);
+$dark-slate-blue-50: rgba(16, 36, 71, 0.5);
+$twilight-blue-50: rgba(10, 83, 149, 0.5);
+$twilight-blue-50-two: rgba(13, 78, 119, 0.5);
+$light-blue-grey-two: #9fc9e6;
+$peacock-blue: #00649e;
+$dark-two: #182127;
+$navy: #02224d;
+$white-90: rgba(255, 255, 255, 0.9);
+$cool-blue-10: rgba(89, 152, 205, 0.1);
+$dark-blue-grey: #1b3547;
+$darkish-blue: #004c94;
+$dark-sky-blue--25: rgba(55, 166, 214, 0.25);
+$dark-sky-blue-two: #39adde;
+$ice-blue: #f1faff;
+$deep-sea-blue: #00568d;
+$white-two: #fefefe;
+$black: #000000;
+$know-section: #E7FAFF;
+$subscribe-section: #2CA3D7;
+$work: #F6FDFF;
+
+// *****************************************************************************
+// Media
+// *****************************************************************************
+
+$mobile: 768px;
+$mobile-down: mobile - 1;
+$tablet: 991px;
+$tablet-down: tablet - 1;
+$tablet-up: 992px;
+$hd: 1920px;
+$hd-down: hd - 1;
