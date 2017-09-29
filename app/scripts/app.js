@@ -18,6 +18,7 @@ const mainModule = (function () {
 		self.diagramWrapper = $('.diagram__wrapper');
 		self.navigations = $('.navigations');
 		self.work = $('.work-animate');
+		self.video = $('#video-background');
 		/* self.elementName = $(); */
 		return self;
 	};
@@ -133,6 +134,14 @@ const mainModule = (function () {
 		});
 	};
 
+	const parallax = function () {
+		$(window).on('load scroll', function () {
+			let scrolled = $(this).scrollTop();
+			let speed = 0.28;
+			$(elements.video).css('transform', 'translate3d(0, ' + -(scrolled * speed) + 'px, 0)');
+		});
+	}
+
 	/* Example function
 	 const exampleFunction = function () {
 	 do code
@@ -147,6 +156,7 @@ const mainModule = (function () {
 		rectangle();
 		smooth();
 		animate();
+		parallax();
 		/* exampleFunction(); */
 	};
 

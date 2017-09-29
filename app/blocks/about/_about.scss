@@ -8,9 +8,9 @@
 	&__video {
 		position: absolute;
 		width: 100%;
-		top: 50%;
+		top: 0;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		margin-left: -50%;
 	}
 	h2 {
 		margin: 0 0 2.8rem 0;
