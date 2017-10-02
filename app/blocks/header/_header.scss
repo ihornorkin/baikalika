@@ -5,6 +5,13 @@ header {
 	background-size: cover;
 	padding-top: 1.8rem;
 	position: relative;
+	.subscribe-form {
+		&__title {
+			text-transform: uppercase;
+			margin-bottom: 3.6rem;
+			letter-spacing: 0.3px;
+		}
+	}
 	subscribe-form {
 		&__desk {
 			display: none;
@@ -13,12 +20,24 @@ header {
 	.logo {
 		height: $logo_height;
 		width: $logo_width;
-		text-align: right;
+		margin-left: auto;
 		background-image: url($logo_image);
 		background-repeat: no-repeat;
 		background-position: $logo_offset_x $logo_offset_y;
 		@media (max-width: $mobile) {
 			margin: 0 auto;
+		}
+	}
+	.btn-two {
+		position: relative;
+		top: 11.1rem;
+		z-index: 2;
+		padding-left: 4.5rem;
+		padding-right: 4.5rem;
+		@media (max-width: $mobile) {
+			padding: 0 1rem;
+			font-size: 1.5rem;
+			top: 7.7rem;
 		}
 	}
 }
@@ -78,8 +97,9 @@ header {
 			margin-right: 0;
 		}
 		a {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			color: $white-90;
+			opacity: 0.9;
 			transition: opacity 0.4s;
 			&:hover,
 			&:focus {
@@ -198,13 +218,19 @@ header {
 }
 
 .main-header-content {
-	padding: 18.5rem 0 7.9rem 0;
+	padding: 18.5rem 0 8.2rem 0;
 	text-align: center;
 	@media (max-width: $mobile) {
 		padding: 5rem 0;
 	}
 	.text-logo {
+		background: url($text_logo_image);
+		width: $text_logo_width;
+		height: $text_logo_height;
+		background-position: ($text_logo_offset_x $text_logo_offset_y);
 		padding-bottom: 0.2rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	h2 {
 		font-size: 2.2rem;
@@ -214,7 +240,7 @@ header {
 		text-align: center;
 		color: $white;
 		text-shadow: 0px 2px 3px $navy;
-		margin-bottom: 10rem;
+		margin-bottom: 9.1rem;
 		text-transform: none;
 		@media (max-width: $mobile) {
 			margin-bottom: 2rem;
@@ -222,15 +248,3 @@ header {
 	}
 }
 
-.btn-two {
-	position: relative;
-	top: 10.7rem;
-	z-index: 2;
-	padding-left: 4.5rem;
-	padding-right: 4.5rem;
-	@media (max-width: $mobile) {
-		padding: 0 1rem;
-		font-size: 1.5rem;
-		top: 7.7rem;
-	}
-}

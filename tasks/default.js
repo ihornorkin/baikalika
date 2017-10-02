@@ -25,11 +25,12 @@ gulp.task('default', () => (
 gulp.task('build', () => (
 	runSequence(
 		'styles:dependencies',
-		'scripts',
+		//'scripts',
 		'copy',
 		'copy:image',
 		'copy:fonts',
 		'copy:libs',
+		'copy:scss',
 		'templates',
 		'watch'
 	)

@@ -1,5 +1,5 @@
 .work {
-	padding: 5.2rem 0 8rem 0;
+	padding: 5.2rem 0 7.8rem 0;
 	background-color: $work;
 	h2 {
 		margin-bottom: 1.5rem;
@@ -11,10 +11,17 @@
 		color: $cerulean;
 		max-width: 100%;
 		text-align: center;
+		margin-bottom: 3rem;
 	}
 }
 
 .work-animate {
+	&__bg {
+		background-color: $white;
+		max-width: 100.6rem;
+		padding-bottom: 8rem;
+		margin: 0 auto;
+	}
 	&__token-animate {
 		position: absolute;
 		width: 5.5rem;
@@ -22,21 +29,43 @@
 		left: -2.6rem;
 		transition: .4s;
 		opacity: 0;
+		@media (max-width: $mobile) {
+			opacity: 1;
+		}
+	}
+	&__token-holder-big {
+		background: url($token_big_image);
+		width: $token_big_width;
+		height: $token_big_height;
+		background-position: ($token_big_offset_x $token_big_offset_y);
 	}
 	&__holder {
 		position: absolute;
 		left: 46.7%;
 		width: 8.6rem;
 		text-align: center;
+		@media (max-width: $mobile) {
+			display: none;
+		}
 		.work-animate__token-icon {
 			position: absolute;
+			background: url($token_small_image);
+			background-position: ($token_small_offset_x $token_small_offset_y);
 			width: 5.5rem;
+			height: 5.5rem;
 			top: 5.1rem;
 			right: -0.6rem;
+			animation: moveUp 3s ease infinite;
 			transition: opacity 0.4s;
 		}
 		.dollar {
+			animation: moveDown 3s ease infinite;
 			transition: 0.4s;
+			@media (max-width: $mobile) {
+				transition-property: none !important;
+				transform: none !important;
+				animation: none !important;
+			}
 		}
 		.up-down {
 			padding-top: 1rem;
@@ -69,14 +98,23 @@
 		text-align: center;
 		color: $darkish-blue;
 		font-family: $new-font;
-		margin: 5rem 0 2rem 0;
+		margin: 3.5rem 0 2rem 0;
+		svg {
+			width: 21.5rem;
+		}
 	}
 	&__bottle-wrapper {
-		padding-left: 18rem;
+		padding-left: 5rem;
+		@media (max-width: $mobile) {
+			padding-left: 2rem;
+		}
 	}
 	&__process-wrapper {
 		padding-left: 8.6rem;
-		padding-right: 16rem;
+		padding-right: 4rem;
+		@media (max-width: $mobile) {
+			display: none;
+		}
 	}
 	&__list {
 		counter-reset: myCounter;
@@ -87,6 +125,9 @@
 		margin: 2.5rem 0 2.9rem 0;
 		color: $black;
 		letter-spacing: -0.02rem;
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
 	}
 	&__list-item {
 		list-style: none;
@@ -123,15 +164,8 @@
 		margin-right: 1rem;
 		opacity: 0;
 		transition: opacity 2s;
-		//transition: opacity 3s;
-		&:first-child {
-			//transition-delay: 0.1s;
-		}
-		&:nth-child(2) {
-			//transition-delay: 0.8s;
-		}
-		&:last-child {
-			//transition-delay: 1.6s;
+		@media (max-width: $mobile) {
+			opacity: 1;
 		}
 	}
 	&__small-bottle {
@@ -142,12 +176,19 @@
 	&__arrow-dash {
 		width: 18rem;
 		padding-top: 3.6rem;
+		@media (max-width: $mobile) {
+			display: none;
+		}
 	}
 	&__arrow-text {
 		color: $cerulean;
 		padding-top: 0.6rem;
 		font-size: 1.6rem;
 		line-height: 1.2;
+		@media (max-width: $mobile) {
+			padding-top: 3.5rem;
+			text-align: center;
+		}
 	}
 	&__bottles,
 	&__about-token {
@@ -155,10 +196,17 @@
 	}
 	&__bottles {
 		width: 40%;
+		@media (max-width: $mobile) {
+			width: 60%;
+		}
 	}
 	&__about-token {
 		width: 60%;
 		padding-left: 2rem;
+		@media (max-width: $mobile) {
+			width: 40%;
+			padding-left: 0;
+		}
 	}
 	&__process-list {
 		position: relative;
@@ -167,6 +215,9 @@
 	&__process-item {
 		position: relative;
 		list-style: none;
+		@media (max-width: $mobile) {
+			width: 33.3333%;
+		}
 		&:before {
 			position: absolute;
 			counter-increment: myCounter;
@@ -257,48 +308,78 @@
 		&:first-child {
 			animation: fadeIn 2s 3s ease forwards, fadeOut 1s ease 5s forwards;
 			transition-delay: 0.1s;
+			@media (max-width: $mobile) {
+				transition-property: none;
+				transform: none;
+				animation: none;
+			}
 		}
 		&:nth-child(2) {
 			animation: fadeIn 2s 3s ease forwards, fadeOut 1s ease 10.1s forwards;
 			transition-delay: 1s;
+			@media (max-width: $mobile) {
+				transition-property: none;
+				transform: none;
+				animation: none;
+			}
 		}
 		&:last-child {
 			animation: fadeIn 2s 3s ease forwards, fadeOut 1s ease 15.2s forwards;
 			transition-delay: 1.9s;
+			@media (max-width: $mobile) {
+				transition-property: none;
+				transform: none;
+				animation: none;
+			}
 		}
-	}
-	.work-animate__holder {
-		.work-animate__token-icon {
-			animation: moveUp 3s ease infinite;
-		}
-	}
-	.work-animate__holder .dollar {
-		animation: moveDown 3s ease infinite;
 	}
 	.work-animate__process-item:first-child {
 		.work-animate__small-bottle {
 			animation: topBottle 3s linear 6.2s;
+			@media (max-width: $mobile) {
+				transition-property: none;
+				transform: none;
+				animation: none;
+			}
 		}
 	}
 	.work-animate__process-item:nth-child(2) {
 		.work-animate__small-bottle {
 			animation: middleBottle 3s linear 11.2s;
+			@media (max-width: $mobile) {
+				transition-property: none;
+				transform: none;
+				animation: none;
+			}
 		}
 	}
 	.work-animate__process-item:last-child {
 		.work-animate__token-animate {
 			animation: bottomToken 3s linear 16.2s;
+			@media (max-width: $mobile) {
+				transition-property: none;
+				transform: none;
+				animation: none;
+			}
 		}
 	}
 	.work-animate__process-item:nth-child(2) .dollar {
-		animation: middleCash 3s linear 11.2s;
+		animation: middleCash 3s linear 14.2s;
+		@media (max-width: $mobile) {
+			transition-property: none;
+			transform: none;
+			animation: none;
+		}
 	}
 	.work-animate__process-item:last-child .dollar {
-		animation: bottomCash 3s linear 16.2s;
+		animation: bottomCash 3s linear 19.2s;
+		@media (max-width: $mobile) {
+			transition-property: none;
+			transform: none;
+			animation: none;
+		}
 	}
 }
-
-//animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;
 
 @keyframes fadeOut {
 	100% {
@@ -356,9 +437,9 @@
 }
 
 @keyframes middleCash {
-1% {
-	opacity: 1;
-}
+	1% {
+		opacity: 1;
+	}
 	100% {
 		opacity: 0;
 		transform: translate(-12rem, 0);

@@ -1,5 +1,6 @@
 .diagram {
-	padding: 17.4rem 0 18.1rem 0;
+	padding: 8rem 0 0 0;
+	margin-bottom: -9rem;
 	background-image: url(../images/block-poly-background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -10,57 +11,28 @@
 	h2 {
 		color: $peacock-blue;
 		margin-bottom: 1.6rem;
+		position: relative;
+		z-index: 5;
 	}
 	&__description {
 		font-size: 2rem;
 		font-weight: 500;
 		line-height: 1.35;
 		color: $cerulean;
-		margin-bottom: 9rem;
+		margin-bottom: 0rem;
 		letter-spacing: 1px;
-		@media (max-width: $tablet) {
-			margin-bottom: 4rem;
-		}
-		@media (max-width: $mobile) {
-			margin-bottom: 4rem;
-		}
-	}
-	&__tags {
-		font-size: 4rem;
-		font-weight: bold;
-		color: $darkish-blue;
-		list-style: none;
-		padding-left: 8rem;
-		margin-top: 7rem;
-		letter-spacing: 2px;
-		@media (max-width: $tablet) {
-			margin: 5rem 0;
-		}
-		@media (max-width: $mobile) {
-			padding-left: 0;
-			font-size: 2.4rem;
-			margin: 0 auto 4rem auto;
-		}
-	}
-	&__element {
-		padding-left: 6rem;
 		position: relative;
-		margin-bottom: 0;
-		@media (max-width: $mobile) {
-			margin-bottom: 1rem;
+		z-index: 5;
+		@media (max-width: $tablet) {
+			margin-bottom: 4rem;
 		}
-		.rectangle {
-			position: absolute;
-			top: 1.5rem;
-			left: 0;
-			width: 3rem;
-			height: 3rem;
-			@media (max-width: $mobile) {
-				top: 0.3rem;
-			}
+		@media (max-width: $mobile) {
+			margin-bottom: 4rem;
 		}
 	}
 	&__image {
+		position: relative;
+		top: -9.25rem;
 		@media (max-width: $mobile) {
 			max-width: 100%;
 			margin-top: 2rem;
@@ -69,139 +41,7 @@
 			max-width: 100%;
 		}
 	}
-	&__wrapper {
-		position: relative;
-	}
-	&__procent {
-		list-style: none;
-		font-size: 5rem;
-		color: $white;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		left: 0;
-	}
-	&__doten {
-		&:before,
-		&:after {
-			content: '';
-			height: 1rem;
-			width: 1rem;
-			background-color: $white;
-			border-radius: 50%;
-			position: absolute;
-		}
-	}
-	&__lines {
-		p {
-			font-size: 5.2rem;
-		}
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			height: 0.2rem;
-			background-color: $white;
-		}
-		&:first-child {
-			right: 0;
-			position: absolute;
-			.diagram__doten {
-				&:before {
-					top: 13.4rem;
-					left: -18rem;
-				}
-				&:after {
-					left: 4rem;
-					top: 0.6rem
-				}
-			}
-			&:before {
-				width: 9rem;
-				left: -4.6rem;
-				top: 1rem;
-			}
-			&:after {
-				width: 18rem;
-				content: '';
-				top: 7.3rem;
-				left: -20rem;
-				transform: rotate(-45deg);
-			}
-		}
-		&:nth-child(2) {
-			position: absolute;
-			right: 0;
-			top: 44rem;
-			p {
-				position: relative;
-				top: -6rem;
-			}
-			.diagram__doten {
-				&:before {
-					top: -12.4rem;
-					left: -18rem;
-				}
-				&:after {
-					left: 4rem;
-					top: 0.6rem
-				}
-			}
-			&:before {
-				width: 9rem;
-				left: -4.6rem;
-				top: 1rem;
-			}
-			&:after {
-				width: 18rem;
-				content: '';
-				top: -5.4rem;
-				left: -19.9rem;
-				transform: rotate(45deg);
-			}
-		}
-		&:nth-child(3) {
-			position: absolute;
-			right: 44%;
-			top: 50rem;
-			&:before {
-				width: 17rem;
-				transform: rotate(84deg);
-				top: -8.6rem;
-				left: -9rem;
-			}
-			.diagram__doten {
-				&:after {
-					top: -8.6rem;
-					left: -9rem;
-				}
-			}
-		}
-	}
 }
 
-#diagram,
-.diagram__procent {
-	display: none !important;
-}
-
-#diagram {
-	width: 44.8rem;
-	height: 44.8rem;
-	overflow: hidden;
-	border-radius: 50%;
-	position: relative;
-	margin-left: 7.8rem;
-	border: 0.8rem solid $white;
-	box-sizing: border-box;
-	.sector {
-		width: 50%;
-		height: 50%;
-		position: absolute;
-		left: 50%;
-		top: 0;
-		transform-origin: left bottom;
-	}
-}
 
 

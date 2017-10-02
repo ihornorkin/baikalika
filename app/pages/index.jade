@@ -10,12 +10,13 @@ include /blocks/token/token
 include /blocks/subscribe/subscribe
 include /blocks/roadmap/roadmap
 include /blocks/diagram/diagram
+include /blocks/modal/modal
 
 block head
 	- var pageTitle = 'Baikalika';
 
 doctype html
-html(lang='ru')
+html(lang='en')
 	+head
 	+body
 		+header
@@ -28,6 +29,7 @@ html(lang='ru')
 		+roadmap
 		+diagram
 		+footer
+		+modal
 
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
 		+scripts(['app.min.js'])

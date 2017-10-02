@@ -5,13 +5,6 @@ mixin diagram()
 				.col-md-12.text-center
 					h2 Acquired funds distribution
 					+e.P.description Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				.col-md-5
-					+e.UL.tags(id='tags')
-						+e.LI.element(data-procent='30' data-color='#0073bb') Development
-						+e.LI.element(data-procent='10' data-color='#3db7e4') Marketing
-						+e.LI.element(data-procent='20' data-color='#00398c') Production
-						+e.LI.element(data-procent='40' data-color='#004c94') Overheads
-				.col-md-7
-					+e.IMG.image(src='../images/diagram.png')
-					+e.wrapper
-						#diagram
+					+e.IMG.image(src="images/acquired-funds-distribution.png" srcset="images/acquired-funds-distribution@2x.png 2x, images/acquired-funds-distribution@3x.png 3x" alt="Diagram")
+				.col-md-12
+

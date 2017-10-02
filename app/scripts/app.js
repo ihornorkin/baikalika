@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'flipclock/compiled/flipclock';
 import '../libs/jQuery-viewport-checker-1.8.8/src/jquery.viewportchecker';
+import 'bootstrap/js/modal';
 
 /* Example import node_modules*/
 /* import 'slick-carousel'; */
@@ -19,6 +20,9 @@ const mainModule = (function () {
 		self.navigations = $('.navigations');
 		self.work = $('.work-animate');
 		self.video = $('#video-background');
+		self.input = $('.subscribe-form__field');
+		self.form = $('form');
+		self.modal = $('#thank-modal');
 		/* self.elementName = $(); */
 		return self;
 	};
@@ -129,7 +133,7 @@ const mainModule = (function () {
 					setTimeout(function() {
 						$(elements.work).addClass('work-animate_start-animate');
 					}, 1500);
-				}, 21000);
+				}, 23000);
 			}
 		});
 	};
@@ -139,6 +143,22 @@ const mainModule = (function () {
 			let scrolled = $(this).scrollTop();
 			let speed = 0.28;
 			$(elements.video).css('transform', 'translate3d(0, ' + -(scrolled * speed) + 'px, 0)');
+		});
+	}
+
+	const input = function() {
+		elements.input.on('focus blur', function() {
+			if ($(this).val().length > 0) {
+				$(this).addClass('subscribe-form__field_active');
+			} else {
+				$(this).removeClass('subscribe-form__field_active');
+			}
+		});
+	}
+
+	const formSend = function() {
+		$(elements.form).on('submit', function() {
+			$(elements.modal).modal('show');
 		});
 	}
 
@@ -157,6 +177,8 @@ const mainModule = (function () {
 		smooth();
 		animate();
 		parallax();
+		input();
+		formSend();
 		/* exampleFunction(); */
 	};
 

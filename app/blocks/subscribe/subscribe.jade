@@ -1,6 +1,6 @@
 mixin subscribe(title, desk)
 	+b.subscribe-form
-		form
+		form(method="get" action="javascript:void(0);")
 			+e.P.__title #{title}
 			+e.P.__desk #{desk}
 			+e.input

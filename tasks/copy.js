@@ -30,3 +30,8 @@ gulp.task('copy:fonts', () => (
 		.pipe(gulp.dest('dist/fonts/'))
 ));
 
+gulp.task('copy:scss', () => (
+	gulp.src('app/styles/**/*')
+		.pipe(changed('dist'))
+		.pipe(gulp.dest('dist/scss/'))
+));
