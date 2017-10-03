@@ -35,3 +35,9 @@ gulp.task('copy:scss', () => (
 		.pipe(changed('dist'))
 		.pipe(gulp.dest('dist/scss/'))
 ));
+
+gulp.task('copy:blocks', () => (
+	gulp.src('app/blocks/**/*.scss')
+		.pipe(changed('dist'))
+		.pipe(gulp.dest('dist/blocks/'))
+));

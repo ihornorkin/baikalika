@@ -31,6 +31,7 @@ gulp.task('build', () => (
 		'copy:fonts',
 		'copy:libs',
 		'copy:scss',
+		'copy:blocks',
 		'templates',
 		'watch'
 	)

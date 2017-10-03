@@ -12,8 +12,5 @@
 @import '../../node_modules/flipclock/compiled/flipclock';
 @import 'helpers/sprites/sprite';
 
-/* Example scss import modules */
-//@import '../../node_modules/slick-carousel/**/*.scss';
-
-/* Blocks import */
+/* Blocks import using node-sass-magic-importer for import */
 @import '../blocks/**/*.scss';

@@ -1,9 +1,45 @@
-.modal.in .modal-dialog {
-	margin-top: 15rem;
+.modal-dialog {
+	width: 80rem;
+	box-shadow: 0 0 46px rgba(10, 83, 149, 0.3);
+}
+
+.modal-content {
+	border-radius: 0;
+}
+
+.modal-bg {
+	position: absolute;
+	margin: auto;
+	top: -10rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url($logo_modal_image);
+	width: $logo_modal_width;
+	height: $logo_modal_height;
+}
+
+.modal-body {
+	padding: 9rem 0 6rem 0;
 }
 
 .modal {
-	h3 {
-		text-align: center;
+	text-align: center;
+	&.in {
+		display: flex !important;
+		align-items: center;
 	}
+	h2 {
+		margin: 0 0 2.8rem 0;
+	}
+	p {
+		color: $cerulean;
+		font-size: 2rem;
+		margin-bottom: 2.2rem;
+		font-weight: 500;
+	}
+}
+
+.modal-content {
+	max-width: 80rem;
 }

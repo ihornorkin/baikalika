@@ -1,6 +1,6 @@
 .work {
 	padding: 5.2rem 0 7.8rem 0;
-	background-color: $work;
+	background-color: $white;
 	h2 {
 		margin-bottom: 1.5rem;
 	}
@@ -17,14 +17,13 @@
 
 .work-animate {
 	&__bg {
-		background-color: $white;
 		max-width: 100.6rem;
 		padding-bottom: 8rem;
 		margin: 0 auto;
 	}
 	&__token-animate {
 		position: absolute;
-		width: 5.5rem;
+		width: 2.8rem;
 		top: 2rem;
 		left: -2.6rem;
 		transition: .4s;
@@ -49,12 +48,10 @@
 		}
 		.work-animate__token-icon {
 			position: absolute;
-			background: url($token_small_image);
-			background-position: ($token_small_offset_x $token_small_offset_y);
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 2.8rem;
+			height:	2.8rem;
 			top: 5.1rem;
-			right: -0.6rem;
+			right: 0.88rem;
 			animation: moveUp 3s ease infinite;
 			transition: opacity 0.4s;
 		}
@@ -302,7 +299,48 @@
 	}
 }
 
+.token-fill {
+	position: relative;
+	overflow: hidden;
+	height: 8.6rem;
+	width: 8.6rem;
+	z-index: 5;
+	border-radius: 50%;
+	margin-top: 2rem;
+	&__fill {
+		position: absolute;
+		fill: $dark-sky-blue;
+		top: 0;
+		width: 100%;
+	}
+}
+
+#token-draw {
+	position: relative;
+	z-index: 5;
+}
+
+.waveShape {
+	width: 200px * 2;
+	height: 200px;
+}
+
 .work-animate.work-animate_start-animate {
+	.token-fill {
+		&__fill {
+			animation-name: fillAction;
+			animation-iteration-count: 1;
+			animation-timing-function: cubic-bezier(0.2, 0.6, 0.8, 0.4);
+			animation-duration: 20s;
+			animation-fill-mode: forwards;
+		}
+	}
+	.waveShape {
+		animation-name: waveAction;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-duration: 0.5s;
+	}
 	.work-animate__big-bottle {
 		opacity: 1;
 		&:first-child {
@@ -466,9 +504,32 @@
 	1% {
 		opacity: 1;
 	}
+	50% {
+		transform: translate(7rem, 3.2rem);
+	}
+	75% {
+		transform: translate(11rem, 4.2rem);
+	}
 	100% {
 		opacity: 0;
 		transform: translate(14rem, 5rem);
 	}
 }
 
+@-webkit-keyframes fillAction {
+	0% {
+		transform: translate(0, 125%);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@-webkit-keyframes waveAction {
+	0% {
+		transform: translate(-50%, 0);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
