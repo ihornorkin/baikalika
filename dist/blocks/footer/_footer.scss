@@ -1,0 +1,91 @@
+footer {
+background-image: url(../images/footer-background.png);
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10.9rem 0 4rem 0;
+	@media (max-width: $mobile) {
+		padding: 4rem 0 8rem 0;
+		position: relative;
+	}
+	.subscribe-form {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		&__title {
+			text-transform: uppercase;
+			font-size: 3.5rem;
+			font-weight: 500;
+			line-height: 1.43;
+			text-align: center;
+			color: $white;
+			text-shadow: none;
+			letter-spacing: 0;
+			margin-bottom: 1.2rem;
+			@media (max-width: $mobile) {
+				font-size: 2.8rem;
+			}
+		}
+		&__desk {
+			width: 81%;
+			font-size: 2rem;
+			font-weight: 500;
+			line-height: 1.35;
+			letter-spacing: 1px;
+			color: $white;
+			margin: 0 auto 6.2rem auto;
+		}
+	}
+	.politics {
+		display: flex;
+		flex-direction: row;
+		margin-top: 12.2rem;
+		@media (max-width: $mobile) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin-top: 5rem;
+		}
+		li {
+			list-style: none;
+			font-size: 1.7rem;
+			font-weight: 500;
+			@media (max-width: $mobile) {
+				margin-bottom: 1rem;
+			}
+			a {
+				color: $white;
+				margin: 0 2.5rem;
+				@media (max-width: $mobile) {
+					margin: 0;
+				}
+			}
+		}
+	}
+	.social {
+		display: inline-flex;
+		float: right;
+		@media (max-width: $mobile) {
+			float: none;
+			display: flex;
+			padding-top: 0;
+		}
+	}
+	.copy {
+		color: $white;
+		list-style: none;
+		font-size: 1.7rem;
+		font-weight: 500;
+		padding-top: 1.65rem;
+		padding-left: 2.4rem;
+		display: inline-block;
+		@media (max-width: $mobile) {
+			position: absolute;
+			bottom: -5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			display: block;
+			padding-left: 0;
+			text-align: center;
+			padding-top: 0;
+		}
+	}
+}

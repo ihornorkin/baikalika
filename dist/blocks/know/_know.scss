@@ -1,0 +1,91 @@
+.know {
+	padding: 6rem 0 6.2rem 0;
+	background-color: $know-section;
+	@media (max-width: $mobile) {
+		padding: 5rem 0;
+	}
+	h2 {
+		margin-bottom: 6.7rem;
+		@media (max-width: $mobile) {
+			margin-bottom: 3.5rem;
+		}
+	}
+	&__item-wrapper {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&__icon-wrapper {
+		height: 16.8rem;
+		margin: 0 auto 5.8rem auto;
+		position: relative;
+		@media (max-width: $mobile) {
+			margin-bottom: 2rem;
+		}
+	}
+	&__item {
+		flex-basis: 33%;
+		padding: 0 1.5rem;
+		@media (max-width: $mobile) {
+			flex-basis: 100%;
+		}
+		&:first-child {
+			.know__icon {
+				background-image: url($bkl_image);
+				background-position: $bkl_offset_x $bkl_offset_y;
+				width: $bkl_width;
+				height: $bkl_height;
+			}
+		}
+		&:nth-child(2) {
+			.know__icon {
+				background-image: url($gear_image);
+				background-position: $gear_offset_x $gear_offset_y;
+				width: $gear_width;
+				height: $gear_height;
+			}
+		}
+		&:last-child {
+			.know__icon {
+				background-image: url($lab_image);
+				background-position: $lab_offset_x $lab_offset_y;
+				width: $lab_width;
+				height: $lab_height;
+			}
+		}
+		@media (max-width: $mobile) {
+			margin-bottom: 5rem;
+		}
+		h3 {
+			font-size: 2rem;
+			font-weight: 500;
+			letter-spacing: 1px;
+			color: $cerulean;
+			margin-bottom: 2.2rem;
+		}
+		p {
+			font-size: 1.7rem;
+			font-weight: 500;
+			line-height: 1.59;
+			color: $dark-two;
+			width: 85%;
+			margin: 0 auto;
+		}
+	}
+	&__icon {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+.btn {
+	border-radius: 5px;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to bottom, $white, #1762a3);
+	background-repeat: no-repeat;
+	font-size: 1.7rem;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	text-align: center;
+	color: $dark-blue-grey;
+	text-shadow: 0px 1px 1px $white-50;
+	padding: 0 3.6rem;
+	height: 5.6rem;
+	text-transform: uppercase;
+	transition: 0.04s ease;
+	position: relative;
+	z-index: 3;
+	&:before {
+		content: '';
+		position: absolute;
+		border-radius: 5px;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(255,255,255,0.85);
+		background: linear-gradient(0deg, #ccd8e2 0%, #FFFFFF 100%);
+		z-index: -1;
+		opacity: 0;
+		transition: opacity 0.4s;
+	}
+}
+
+button.btn {
+	&:hover {
+		text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+		color: $dark-blue-grey;
+		background-position: 0 -12rem;
+		&:before {
+			opacity: 0.95;
+		}
+	}
+	&:active,
+	&:focus {
+		background: linear-gradient(180deg, #1762A3 -120%,#FFFFFF 100%);
+		&:before {
+			opacity: 0;
+		}
+	}
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn-two {
+	border: none;
+	background-image: linear-gradient($dark-sky-blue-38, rgba(55, 166, 214, 0.38)), linear-gradient(to bottom, $dark-sky-blue, $cerulean);
+	box-shadow: 0px 3px 8px 0 $dark-slate-blue-50, 0px 3px 46px 0 $twilight-blue-50, inset -0px -1px 0 0 $twilight-blue-50-two, inset 0px 1px 0 0 $light-blue-grey-two;
+	color: $white;
+	text-shadow: 0px 1px 1px $darkish-blue-50;
+	&:before {
+		content: '';
+		background: linear-gradient(0deg, #0073BB 0%, #3DB7E4 100%);
+	}
+}
+
+button.btn-two {
+	&:hover {
+		text-shadow: 0 1px 1px rgba(0,76,148,0.5);
+		background-position: 0 0;
+		color: $white;
+		&:before {
+			opacity: 1;
+		}
+	}
+	&:active,
+	&:focus {
+		color: $white;
+		background: linear-gradient(180deg, #0073BB 0%, #3DB7E4 100%);
+		&:before {
+			opacity: 0;
+		}
+	}
+}

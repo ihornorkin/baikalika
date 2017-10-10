@@ -1,0 +1,163 @@
+.timer {
+	text-align: center;
+	&__time {
+		display: inline-block;
+		width: auto;
+		@media (max-width: $mobile) {
+			margin: 0;
+		}
+	}
+	&__desk {
+		font-size: 2rem;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color: $darkish-blue;
+		margin-bottom: 0.8rem;
+	}
+
+	.flip-clock-divider {
+		width: 1.5rem;
+		@media (max-width: $mobile) {
+			width: 0;
+		}
+	}
+
+.flip-clock-dot {
+	display: none;
+}
+
+.flip-clock-wrapper ul li a div.up:after {
+	content: none;
+}
+
+.flip-clock-wrapper ul,
+.flip-clock-wrapper ul li a div div.inn {
+	background-color: transparent;
+	background-image: linear-gradient($dark-sky-blue--25, rgba(55, 166, 214, 0.25)), linear-gradient(to top, $dark-sky-blue, $cerulean);
+	box-shadow: 0px 2px 3px 0 $dark-slate-blue-50;
+	color: $white;
+	text-shadow: 0px 2px 1px $darkish-blue;
+	border-radius: 0.5rem;
+	font-family: $new-font;
+	font-size: 7rem;
+	font-weight: bold;
+	line-height: 9.5rem;
+	@media (max-width: $mobile) {
+		font-size: 4rem;
+		line-height: 4.8rem;
+	}
+}
+
+.flip-clock-wrapper ul {
+	height: 10rem;
+	width: 6.9rem;
+	@media (max-width: $mobile) {
+		height: 4.8rem;
+		width: 3rem;
+	}
+}
+
+.flip-clock-wrapper .flip:nth-child(2),
+.flip-clock-wrapper .flip:nth-child(5),
+.flip-clock-wrapper .flip:nth-child(8),
+.flip-clock-wrapper .flip:nth-child(11) {
+	margin-right: 0;
+	border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.flip-clock-wrapper .flip:nth-child(3),
+.flip-clock-wrapper .flip:nth-child(6),
+.flip-clock-wrapper .flip:nth-child(9),
+.flip-clock-wrapper .flip:nth-child(12) {
+	margin-left: 0;
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.flip-clock-wrapper .flip:nth-child(2) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(5) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(8) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(11) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(3) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(6) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(9) li a div div.inn,
+.flip-clock-wrapper .flip:nth-child(12) li a div div.inn {
+	border-radius: 0;
+}
+
+.flip:nth-child(2),
+.flip:nth-child(5),
+.flip:nth-child(8),
+.flip:nth-child(11) {
+	.flip-clock-before,
+	.flip-clock-active {
+		padding-left: 2rem;
+		@media (max-width: $mobile) {
+			padding-left: 0.5rem;
+		}
+	}
+}
+
+.flip:nth-child(3),
+.flip:nth-child(6),
+.flip:nth-child(9),
+.flip:nth-child(12) {
+	.flip-clock-before,
+	.flip-clock-active {
+		padding-right: 2rem;
+		@media (max-width: $mobile) {
+			padding-right: 0.5rem;
+		}
+	}
+}
+
+.flip {
+	a {
+		pointer-events: none;
+	}
+}
+
+.flip-clock-wrapper ul.play li.flip-clock-active,
+.flip-clock-wrapper ul.play li.flip-clock-before .up,
+.flip-clock-wrapper ul.play li.flip-clock-active .down,
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow,
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow,
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow,
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+	animation: 0;
+}
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow,
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow,
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+	background: transparent;
+}
+
+.flip-clock-wrapper ul li a div.down {
+	border-radius: 0;
+}
+
+.flip-clock-wrapper ul li a {
+	border-radius: 0;
+	background: transparent !important;
+}
+
+.flip-clock-divider .flip-clock-label {
+	top: auto;
+	bottom: -4.4rem;
+	font-family: $main-font;
+	font-size: 2.33rem;
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	color: $cerulean;
+	text-transform: uppercase;
+	text-align: center;
+	width: 13.8rem;
+	left: 140%;
+	@media (max-width: $mobile) {
+		bottom: 1.2rem;
+		left: 0.5rem;
+		width: 7rem;
+		font-size: 1.8rem;
+	}
+}
+}

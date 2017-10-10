@@ -1,0 +1,16 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/optimize';
+@import 'helpers/fonts';
+
+/* Bootsrap styles */
+@import '../../node_modules/bootstrap/dist/css/bootstrap';
+
+@import 'helpers/base';
+@import 'helpers/buttons';
+@import '../libs/font-awesome-4.7.0/css/font-awesome';
+@import '../../node_modules/flipclock/compiled/flipclock';
+@import 'helpers/sprites/sprite';
+
+/* Blocks import using node-sass-magic-importer for import */
+@import '../blocks/**/*.scss';

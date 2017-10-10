@@ -1,0 +1,43 @@
+.about {
+	padding: 14.6rem 0 11rem 0;
+	position: relative;
+	overflow: hidden;
+	@media (max-width: $mobile) {
+		padding: 8rem 0 6rem 0;
+	}
+	&__video {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 50%;
+		margin-left: -50%;
+	}
+	h2 {
+		margin: 0 0 2.8rem 0;
+	}
+	&__text {
+		margin: 0 auto;
+		p {
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 1.59;
+			text-align: center;
+			color: $dark-two;
+			margin-bottom: 2.45rem;
+			@media (max-width: $mobile) {
+				font-size: 1.4rem;
+				margin-bottom: 1.5rem;
+			}
+		}
+		.allert {
+			font-size: 20px;
+			line-height: 1.35;
+			letter-spacing: 1px;
+			color: $cerulean;
+			font-weight: 400;
+			@media (max-width: $mobile) {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}

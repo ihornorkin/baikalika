@@ -1,0 +1,100 @@
+.token {
+	padding: 7.8rem 0 6.2rem 0;
+	background-image: url(../images/token-sale-background.png);
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	@media (max-width: $mobile) {
+		padding: 6rem 0;
+	}
+	h2 {
+		margin-bottom: 1.6rem;
+		@media (max-width: $mobile) {
+			margin-top: 1rem;
+		}
+	}
+	&__title {
+		margin-top: 8.2rem;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		@media (max-width: $mobile) {
+			flex-wrap: wrap;
+		}
+	}
+	&__item {
+		position: relative;
+		height: 45.5rem;
+		width: 100%;
+		list-style: none;
+		@media (max-width: $mobile) {
+			height: 29rem;
+		}
+		@media (min-width: 450px) and (max-width: $mobile) {
+			height: 46rem;
+			margin-bottom: 2rem;
+		}
+		img {
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			@media (max-width: $mobile) {
+				max-width: 100%;
+			}
+		}
+		&:nth-child(2) {
+			img {
+				left: 55%;
+				transform: translateX(-50%) rotate(147deg);
+			}
+		}
+		&:nth-child(3) {
+			img {
+				transform: translateX(-50%) rotate(75deg);
+			}
+		}
+	}
+	&__contents {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		h3 {
+			font-size: 2rem;
+			font-weight: 500;
+			color: $dark-sky-blue-two;
+			font-family: $new-font;
+			margin-top: 4rem;
+			margin-bottom: 0;
+			@media (max-width: $mobile) {
+				margin-top: 1rem;
+			}
+		}
+		p {
+			margin-top: 0;
+			font-size: 4.8rem;
+			font-weight: bold;
+			letter-spacing: -0.5px;
+			color: $darkish-blue;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: $new-font;
+			position: relative;
+			top: -0.4rem;
+			span {
+				font-size: 2.5rem;
+				position: relative;
+				top: -0.5rem;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}
