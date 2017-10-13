@@ -79,11 +79,19 @@
 			font-size: 1.7rem;
 			font-weight: 500;
 			color: $white;
+			width: 60%;
+			@media (max-width: $mobile) {
+				width: 100%;
+				font-size: 1.4rem;
+			}
 		}
 	}
 	&__item:nth-child(odd) {
 		margin-left: auto;
 		padding-left: 4.2rem;
+		p {
+			margin-right: auto;
+		}
 		&:before {
 			//background-image: url(../images/Drop-white.png);
 			background-image: url($drop_white_image);
@@ -98,6 +106,9 @@
 		margin-right: auto;
 		padding-right: 4.5rem;
 		text-align: right;
+		p {
+			margin-left: auto;
+		}
 		&:before {
 			//background-image: url(../images/Drop-round.png);
 			width: $drop_round_width;
