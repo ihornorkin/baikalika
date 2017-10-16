@@ -3,7 +3,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
-	padding: 8.1rem 0 3.4rem 0;
+	padding: 8.1rem 0 0 0;
 	position: relative;
 	@media (max-width: $mobile) {
 		padding: 6rem 0 4rem 0;
@@ -12,17 +12,27 @@
 		color: $white;
 		margin-bottom: 2.7rem;
 	}
+	&__steps-big {
+		width: 72%;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		top: -5.4rem;
+	}
 	&__description {
 		color: $white;
 		font-size: 2rem;
 		font-weight: 500;
 		line-height: 1.35;
 		text-align: center;
-		width: 48%;
+		width: 65%;
 		letter-spacing: 1px;
 		margin: 0 auto 2.8rem auto;
 		@media (max-width: $mobile) {
 			width: 100%;
+		}
+		&--small {
+			font-size: 1.6rem;
 		}
 	}
 	&__steps {
@@ -69,6 +79,9 @@
 		margin-top: 1.2rem;
 		margin-bottom: 4.2rem;
 		padding-top: 0.5rem;
+		@media (max-width: $mobile) {
+			margin-bottom: 1rem;
+		}
 		h3 {
 			font-size: 2.4rem;
 			font-weight: 300;
@@ -79,16 +92,22 @@
 			font-size: 1.7rem;
 			font-weight: 500;
 			color: $white;
+			width: 60%;
+			@media (max-width: $mobile) {
+				width: 100%;
+				font-size: 1.4rem;
+			}
 		}
 	}
 	&__item:nth-child(odd) {
 		margin-left: auto;
 		padding-left: 4.2rem;
+		p {
+			margin-right: auto;
+		}
 		&:before {
-			//background-image: url(../images/Drop-white.png);
 			background-image: url($drop_white_image);
 			background-position: $drop_white_offset_x $drop_white_offset_y;
-			//background: $drop_white_image $drop_white_offset_x $drop_white_offset_y;
 			left: -1.2rem;
 			width: $drop_white_width;
 			height: $drop_white_height;
@@ -98,8 +117,10 @@
 		margin-right: auto;
 		padding-right: 4.5rem;
 		text-align: right;
+		p {
+			margin-left: auto;
+		}
 		&:before {
-			//background-image: url(../images/Drop-round.png);
 			width: $drop_round_width;
 			height: $drop_round_height;
 			background-image: url($drop_round_image);
@@ -112,12 +133,7 @@
 		position: relative;
 		&:before {
 			content: '';
-			//height: 3.4rem;
-			//width: 2.4rem;
 			position: absolute;
-			//background-repeat: no-repeat;
-			//background-size: cover;
-			//background-position: 50%;
 			top: 50%;
 			transform: translateY(-50%);
 		}

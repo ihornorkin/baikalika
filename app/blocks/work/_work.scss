@@ -1,6 +1,11 @@
 .work {
 	padding: 5.2rem 0 7.8rem 0;
 	background-color: $white;
+	@media (max-width: $mobile) {
+		padding-bottom: 0;
+		position: relative;
+		overflow: hidden;
+	}
 	h2 {
 		margin-bottom: 1.5rem;
 	}
@@ -36,6 +41,7 @@
 		opacity: 0;
 		@media (max-width: $mobile) {
 			opacity: 1;
+			display: none;
 		}
 	}
 	&__token-holder-big {
@@ -116,7 +122,8 @@
 		padding-left: 8.6rem;
 		padding-right: 4rem;
 		@media (max-width: $mobile) {
-			display: none;
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 	&__list {
@@ -214,12 +221,21 @@
 	&__process-list {
 		position: relative;
 		counter-reset: myCounter;
+		@media (max-width: $mobile) {
+			display: flex;
+			align-items: center;
+			float: left;
+			justify-content: space-around;
+			width: 100%;
+		}
 	}
 	&__process-item {
 		position: relative;
 		list-style: none;
 		@media (max-width: $mobile) {
 			width: 33.3333%;
+			position: relative;
+			padding-top: 20rem;
 		}
 		&:before {
 			position: absolute;
@@ -236,6 +252,9 @@
 			right: 2rem;
 			font-family: $new-font;
 			font-weight: bold;
+			@media (max-width: $mobile) {
+				content: none;
+			}
 		}
 		&:first-child {
 			.work-animate__small-bottle {
@@ -279,28 +298,58 @@
 			width: 7.1rem;
 			bottom: 5.6rem;
 			right: 8.5rem;
+			@media (max-width: $mobile) {
+				position: static;
+			}
 		}
 		.shoping {
 			width: 7.6rem;
 			top: 25%;
 			right: 9.5rem;
+			@media (max-width: $mobile) {
+				position: static;
+			}
 		}
 		.exchange {
 			width: 9.8rem;
 			top: 58%;
 			right: 8rem;
+			@media (max-width: $mobile) {
+				position: static;
+			}
 		}
 		.arrow-1 {
 			width: 14.8rem;
 			padding-top: 7.2rem;
+			@media (max-width: $mobile) {
+				position: absolute;
+				transform: rotate(120deg);
+				left: -3rem;
+				top: 6rem;
+				padding-top: 0;
+			}
 		}
 		.arrows-2 {
 			padding-top: 4.6rem;
 			width: 13.8rem;
+			@media (max-width: $mobile) {
+				position: absolute;
+				transform: rotate(92deg);
+				left: -3rem;
+				top: 6rem;
+				padding-top: 0;
+			}
 		}
 		.arrow-3 {
 			padding-top: 5rem;
 			width: 16rem;
+			@media (max-width: $mobile) {
+				position: absolute;
+				transform: rotate(77deg);
+				left: -3rem;
+				top: 5rem;
+				padding-top: 0;
+			}
 		}
 	}
 }
