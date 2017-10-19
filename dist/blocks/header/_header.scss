@@ -12,7 +12,7 @@ header {
 			letter-spacing: 0.3px;
 		}
 	}
-	subscribe-form {
+	.subscribe-form {
 		&__desk {
 			display: none;
 		}
@@ -24,8 +24,13 @@ header {
 		background-image: url($logo_image);
 		background-repeat: no-repeat;
 		background-position: $logo_offset_x $logo_offset_y;
+		@media (max-width: $tablet-up) {
+			margin-right: auto;
+			margin-left: 0;
+		}
 		@media (max-width: $mobile) {
-			margin: 0 auto;
+			margin-right: auto;
+			margin-left: 0;
 		}
 	}
 	.btn-two {
@@ -81,7 +86,7 @@ header {
 	z-index: 4;
 	@media (max-width: $mobile) {
 		flex-wrap: wrap;
-		padding-top: 2rem;
+		padding-top: 0.5rem;
 		justify-content: space-between;
 	}
 	&__link {
@@ -132,6 +137,7 @@ header {
 		padding-top: 1.5rem;
 		@media (max-width: $mobile) {
 			margin: 0;
+			padding-top: 0.5rem;
 		}
 		&:hover,
 		&:focus {
@@ -166,6 +172,11 @@ header {
 	display: flex;
 	text-align: center;
 	padding-top: 0.7rem;
+	@media (max-width: $tablet-up) {
+		position: absolute;
+		right: 2.5rem;
+		top: -5rem;
+	}
 	@media (max-width: $mobile) {
 		position: absolute;
 		top: 0.6rem;
@@ -221,7 +232,7 @@ header {
 	padding: 18.5rem 0 8.2rem 0;
 	text-align: center;
 	@media (max-width: $mobile) {
-		padding: 5rem 0;
+		padding: 18.5rem 0 5rem 0;
 	}
 	.text-logo {
 		background: url($text_logo_image);
@@ -239,7 +250,7 @@ header {
 		letter-spacing: 1.1px;
 		text-align: center;
 		color: $white;
-		text-shadow: 0px 2px 3px $navy;
+		text-shadow: 0 2px 3px $navy;
 		margin-bottom: 9.1rem;
 		text-transform: none;
 		@media (max-width: $mobile) {
@@ -248,3 +259,15 @@ header {
 	}
 }
 
+.site-navigation {
+	position: fixed;
+	width: 100%;
+	transition: 0.4s;
+	top: 1.8rem;
+	&--fixed {
+		padding: 1.5rem 0;
+		top: 0;
+		background-color: $twilight-blue-50-two;
+		z-index: 50;
+	}
+}

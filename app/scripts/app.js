@@ -23,6 +23,7 @@ const mainModule = (function () {
 		self.input = $('.subscribe-form__field');
 		self.form = $('form');
 		self.modal = $('#thank-modal');
+		self.menu = $('.site-navigation');
 		/* self.elementName = $(); */
 		return self;
 	};
@@ -144,7 +145,7 @@ const mainModule = (function () {
 			let speed = 0.28;
 			$(elements.video).css('transform', 'translate3d(0, ' + -(scrolled * speed) + 'px, 0)');
 		});
-	}
+	};
 
 	const input = function() {
 		elements.input.on('focus blur', function() {
@@ -154,13 +155,23 @@ const mainModule = (function () {
 				$(this).removeClass('subscribe-form__field_active');
 			}
 		});
-	}
+	};
 
 	const formSend = function() {
 		$(elements.form).on('submit', function() {
 			$(elements.modal).modal('show');
 		});
-	}
+	};
+
+	const menu = function() {
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop() > 50) {
+				$(elements.menu).addClass('site-navigation--fixed');
+			} else {
+				$(elements.menu).removeClass('site-navigation--fixed');
+			}
+		});
+	};
 
 	/* Example function
 	 const exampleFunction = function () {
@@ -179,6 +190,7 @@ const mainModule = (function () {
 		parallax();
 		input();
 		formSend();
+		menu();
 		/* exampleFunction(); */
 	};
 
