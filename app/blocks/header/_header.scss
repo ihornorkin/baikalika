@@ -5,6 +5,15 @@ header {
 	background-size: cover;
 	padding-top: 1.8rem;
 	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		height: 10rem;
+		width: 100%;
+		background-image: linear-gradient( 180deg, rgba(0,115,187,0.90196) 40%, rgba(0,115,187,0) 100%);
+		top: 0;
+		left: 0;
+	}
 	.subscribe-form {
 		&__title {
 			text-transform: uppercase;

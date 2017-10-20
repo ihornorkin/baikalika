@@ -148,7 +148,8 @@ const mainModule = (function () {
 	};
 
 	const input = function() {
-		elements.input.on('focus blur', function() {
+		elements.input.on('input', function() {
+			console.log('test');
 			if ($(this).val().length > 0) {
 				$(this).addClass('subscribe-form__field_active');
 			} else {
