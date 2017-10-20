@@ -275,7 +275,6 @@ header {
 	top: 0;
 	padding: 1.5rem 0;
 	&--fixed {
-		//padding: 1.5rem 0;
 		top: 0;
 		background-color: $white;
 		box-shadow: 0px 3px 46px 0px rgba(10, 83, 149, 0.25);
@@ -287,6 +286,9 @@ header {
 			background-image: url($logo_on_white_image);
 			background-repeat: no-repeat;
 			background-position: $logo_on_white_offset_x $logo_on_white_offset_y;
+			@media (max-width: $mobile) {
+				margin-left: 0;
+			}
 		}
 		.social {
 			&__link {
