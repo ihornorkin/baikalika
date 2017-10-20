@@ -143,7 +143,7 @@ const mainModule = (function () {
 		$(window).on('load scroll', function () {
 			let scrolled = $(this).scrollTop();
 			let speed = 0.28;
-			$(elements.video).css('transform', 'translate3d(0, ' + -(scrolled * speed) + 'px, 0)');
+			$(elements.video).css('transform', 'translate(-50%, ' + -(scrolled * speed) + 'px)');
 		});
 	};
 
