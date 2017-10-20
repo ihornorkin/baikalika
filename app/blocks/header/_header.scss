@@ -263,11 +263,12 @@ header {
 	position: fixed;
 	width: 100%;
 	transition: 0.4s;
-	top: 1.8rem;
+	top: 0;
+	padding: 1.5rem 0;
 	&--fixed {
-		padding: 1.5rem 0;
+		//padding: 1.5rem 0;
 		top: 0;
-		background-color: $twilight-blue-50-two;
+		background-color: $cerulean;
 		z-index: 50;
 	}
 }
