@@ -1,23 +1,23 @@
-include ../subscribe/subscribe
+include ../subscribe/subscribe_ru
 
-mixin footer()
+mixin footer_ru()
 	+b.FOOTER.footer(id="contacts")
 		.container
 			.row
-				+subscribe('Sign-up to the pre-sale', 'If you are interested in our special options for the early purchase of the BAIKALIKA tokens and to guarantee your participation in the token pre-sale, please, submit your email address and the approximate amount of tokens you consider for purchase.')
+				+subscribe_ru('ПРИНЯТЬ УЧАСТИЕ В ПРЕДВАРИТЕЛЬНОЙ ПРОДАЖЕ', 'Чтобы подать заявку на участие в предпродаже токенов «Байкалика», пожалуйста, укажите адрес вашей электронной почты и приблизительную сумму токенов, которую хотите приобрести.')
 			.row
 				.col-md-12
 					+b.UL.politics
-					//	+e.LI.item
-					//		a(href='#', target='_blank') Home
-					//	+e.LI.item
-					//		a(href='#', target='_blank') Privacy
-					//	+e.LI.item
-					//		a(href='#', target='_blank') Terms & Conditions
-					//	+e.LI.item
-					//		a(href='#', target='_blank') About us
-					//	+e.LI.item
-					//		a(href='#', target='_blank') Contact us
+				//		+e.LI.item
+				//			a(href='/', target='_blank') Home
+				//		+e.LI.item
+				//			a(href='#', target='_blank') Privacy
+				//		+e.LI.item
+				//			a(href='#', target='_blank') Terms & Conditions
+				//		+e.LI.item
+				//			a(href='#', target='_blank') About us
+				//		+e.LI.item
+				//			a(href='#', target='_blank') Contact us
 				.col-md-12
 					span.copy © 2017. Baikalika
 					+b.UL.social

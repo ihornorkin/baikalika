@@ -204,6 +204,7 @@ header {
 			display: inline-block;
 			text-transform: uppercase;
 			padding-bottom: 0.5rem;
+			white-space: nowrap;
 			&:hover,
 			&:focus {
 				color: $white;
@@ -244,13 +245,23 @@ header {
 		padding: 18.5rem 0 5rem 0;
 	}
 	.text-logo {
-		background: url($text_logo_image);
-		width: $text_logo_width;
-		height: $text_logo_height;
-		background-position: ($text_logo_offset_x $text_logo_offset_y);
 		padding-bottom: 0.2rem;
 		margin-left: auto;
 		margin-right: auto;
+		color: #FFFFFF;
+		font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0.2rem 0.3rem #02224d;
+		&:empty{
+			background: url($text_logo_image);
+			width: $text_logo_width;
+			height: $text_logo_height;
+			background-position: ($text_logo_offset_x $text_logo_offset_y);
+		}
 	}
 	h2 {
 		font-size: 2.2rem;

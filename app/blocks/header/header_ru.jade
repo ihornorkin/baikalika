@@ -1,6 +1,6 @@
-include ../subscribe/subscribe
+include ../subscribe/subscribe_ru
 
-mixin header()
+mixin header_ru()
 	+b.HEADER(id="home")
 		.site-navigation
 			.container
@@ -35,15 +35,15 @@ mixin header()
 										i.fa.fa-slack
 						.col-md-6.col-sm-6
 							+b.NAV.navigations
-								+e.A.__link(href = '#home') Home
-								+e.A.__link(href = '#tokens') TOKENs
+								+e.A.__link(href = '#home') Главная страница
+								+e.A.__link(href = '#tokens') Токены
 								+e.A.__link(href = '#roadmap') roadmap
-								+e.A.__link(href = '#contacts') Contact
+								+e.A.__link(href = '#contacts') Контакты
 						.col-md-1.language-wrap
 							+b.UL.language
-								+e.LI.__element-toggle.__element-toggle-active
-									a(href='#') EN
 								+e.LI.__element-toggle
+									a(href='/') EN
+								+e.LI.__element-toggle.__element-toggle-active
 									a(href='index_ru.html') РУ
 								+e.LI.__element-toggle
 									a(href='#') 中文
@@ -51,8 +51,8 @@ mixin header()
 			.container
 				.row
 					.col-md-12
-						.text-logo
-						h2 Blockchain technologies for Baikal water mining and distribution
+						.text-logo Байкалика
+						h2 БЛОКЧЕЙН-ТЕХНОЛОГИИ ДЛЯ ДОБЫЧИ И РАСПРЕДЕЛЕНИЯ ПИТЬЕВОЙ ВОДЫ ОЗЕРА БАЙКАЛ
 					.col-md-12
-						+subscribe('Interested in purchasing BAIKALIKA tokens?')
-						button.btn.btn-two Download Project White Paper
+						+subscribe_ru('Заинтересовались покупкой наших токенов?')
+						button.btn.btn-two Скачать White Paper

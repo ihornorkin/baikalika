@@ -1,0 +1,35 @@
+include /blocks/head/head
+include /blocks/body/body
+include /blocks/scripts/scripts
+include /blocks/header/header_ru
+include /blocks/footer/footer_ru
+include /blocks/about/about_ru
+include /blocks/know/know_ru
+include /blocks/work/work_ru
+include /blocks/token/token_ru
+include /blocks/subscribe/subscribe_ru
+include /blocks/roadmap/roadmap_ru
+include /blocks/diagram/diagram
+include /blocks/modal/modal
+
+block head
+	- var pageTitle = 'Baikalika';
+
+doctype html
+html(lang='en')
+	+head
+	+body
+		+header_ru
+		+about_ru
+		+know_ru
+		+work_ru
+		+token_ru
+		.subscribe-input
+			+subscribe_ru('Предпродажа токенов стартует 29 ноября 2017 года', 'Получать уведомления', 'form-subscribe')
+		+roadmap_ru
+		+diagram
+		+footer_ru
+		+modal
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		+scripts(['app.min.js'])
