@@ -50,7 +50,7 @@ const mainModule = (function () {
 			countdown: true
 		});
 		let words = ['day', 'hour', 'min', 'sec'];
-		$('.flip-clock-label').each(function (i) {
+		$('#timer .flip-clock-label').each(function (i) {
 			$(this).text(words[i]);
 		});
 	};
@@ -72,7 +72,7 @@ const mainModule = (function () {
 			countdown: true
 		});
 		let words = ['Дни', 'Часы', 'Минуты', 'Секунды'];
-		$('.flip-clock-label').each(function (i) {
+		$('#timer_ru .flip-clock-label').each(function (i) {
 			$(this).text(words[i]);
 		});
 	};
