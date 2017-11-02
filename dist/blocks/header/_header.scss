@@ -255,6 +255,7 @@ header {
     margin-bottom: 3rem;
     text-align: center;
     color: #ffffff;
+		font-family: $raleway-font;
     text-shadow: 0 0.2rem 0.3rem #02224d;
 		&:empty{
 			background: url($text_logo_image);

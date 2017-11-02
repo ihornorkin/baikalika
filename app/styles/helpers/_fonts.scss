@@ -7,3 +7,7 @@
 @include font-face( Raleway, "../fonts/raleway-bold-webfont", bold);
 @include font-face( Raleway, "../fonts/raleway-light-webfont", 300);
 @include font-face( Raleway, "../fonts/raleway-medium-webfont", 500);
+
+@include font-face( Raleway_3, "../fonts/Raleway-Bold", bold);
+@include font-face( Raleway_3, "../fonts/Raleway-Light", 300);
+@include font-face( Raleway_3, "../fonts/Raleway-Medium", 500);
