@@ -25,6 +25,7 @@ const mainModule = (function () {
 		self.form = $('form');
 		self.modal = $('#thank-modal');
 		self.menu = $('.site-navigation');
+		self.navigation_teaser = $('.navigation-teaser');
 		/* self.elementName = $(); */
 		return self;
 	};
@@ -127,7 +128,7 @@ const mainModule = (function () {
 
 		$(elements.diagramWrapper).append('<ul class="diagram__procent"></ul>');
 		for (let i = 0; i < newData.length; i++) {
-				$('.diagram__procent').append('<li class="diagram__lines"><span class="diagram__doten"></span><p>' + newData[i].value + '%</p></li>');
+			$('.diagram__procent').append('<li class="diagram__lines"><span class="diagram__doten"></span><p>' + newData[i].value + '%</p></li>');
 		}
 	};
 
@@ -139,12 +140,37 @@ const mainModule = (function () {
 	}
 
 	const smooth = function () {
-		$(elements.navigations).on("click","a", function (event) {
-			event.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$(elements.document).animate({scrollTop: top}, 400);
-		});
+		if(elements.navigation_teaser) {
+			$(elements.navigation_teaser).on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href');
+				var top = 0;
+				switch (id) {
+					case '#home':
+						top = 0;
+						break;
+					case '#tokens':
+						top = 830;
+						break;
+					case '#roadmap':
+						top = 6100;
+						break;
+					case '#contacts':
+						top = 0;
+						break;
+					default:
+						break;
+				}
+				$('.teaser-block').animate({scrollTop: top}, 400);
+			});
+		} else {
+			$(elements.navigations).on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$(elements.document).animate({scrollTop: top}, 400);
+			});
+		}
 	};
 
 	const animate = function() {
@@ -227,7 +253,7 @@ const mainModule = (function () {
 /* Initilisation function */
 
 $(document).ready(function () {
-		mainModule.init();
+	mainModule.init();
 });
 
 

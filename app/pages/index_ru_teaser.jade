@@ -1,0 +1,18 @@
+include /blocks/head/head
+include /blocks/body/body
+include /blocks/scripts/scripts
+include /blocks/header/header_ru_teaser
+
+block head
+	- var pageTitle = 'Baikalika';
+
+doctype html
+html(lang='en')
+	+head
+	+body
+		+header_ru_teaser
+		.teaser-block <iframe src="Baikalika-teaser-RU.pdf" class='teaser-iframe'><p style="font-size: 110%;"><em><strong>ERROR: </strong> An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p></iframe>
+
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		+scripts(['app.min.js'])

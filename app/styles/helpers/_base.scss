@@ -83,3 +83,13 @@ a:hover, a:focus {
 		}
 	}
 }
+.teaser-iframe{
+	width: 100%;
+	height: 8100px;
+}
+.teaser-block{
+	width: 100%;
+	height: calc(100vh - 78px);
+  margin-top: 6rem;;
+	overflow: auto;
+}
