@@ -1,8 +1,22 @@
 mixin subscribe(title, desk)
 	+b.subscribe-form
-		form(method="get" action="javascript:void(0);")
-			+e.P.__title #{title}
-			+e.P.__desk #{desk}
-			+e.input
-				+e.INPUT.__field(type="text" placeholder="Your e-mail")
-				+e.BUTTON.__send.btn(type="submit") Sign-up to the pre-sale
+		div(id="mc_embed_signup")
+			form(action="https://ptoken.us16.list-manage.com/subscribe/post?u=1a7d927f4a202d0e498d9d6f0&amp;id=6cd2b7a722" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate)
+				div(id="mc_embed_signup_scroll")
+					+e.P.__title Subscribe to our mailing list
+				div(id="mce-responses" class="clear")
+					div(class="response" id="mce-error-response" style="display:none")
+					div(class="response" id="mce-success-response" style="display:none")
+				div(style="position: absolute; left: -5000px;" aria-hidden="true")
+					+e.INPUT.__field(type="text" tabindex="-1" value="" name="b_1a7d927f4a202d0e498d9d6f0_6cd2b7a722")
+				div.mc-field-group
+					+e.input
+						+e.INPUT.__field(type="email" placeholder="Your e-mail" value="" name="EMAIL" class="required email" id="mce-EMAIL")
+						+e.INPUT.__send.btn(type="submit" id="mc-embedded-subscribe" class="button" value="Subscribe" name="subscribe")
+
+		//form(method="get" action="javascript:void(0);")
+		//	+e.P.__title #{title}
+		//	+e.P.__desk #{desk}
+		//	+e.input
+		//		+e.INPUT.__field(type="text" placeholder="Your e-mail")
+		//		+e.BUTTON.__send.btn(type="submit") Sign-up to the pre-sale
