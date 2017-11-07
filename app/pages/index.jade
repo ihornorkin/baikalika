@@ -11,6 +11,7 @@ include /blocks/subscribe/subscribe
 include /blocks/roadmap/roadmap
 include /blocks/diagram/diagram
 include /blocks/modal/modal
+include /blocks/team/team
 
 block head
 	- var pageTitle = 'Baikalika';
@@ -28,6 +29,7 @@ html(lang='en')
 			+subscribe('Crowdsale starts on 29 November, 2017', 'Follow our project updates', 'form-subscribe')
 		+roadmap
 		+diagram
+		+team
 		+footer
 		+modal
 

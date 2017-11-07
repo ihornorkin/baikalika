@@ -1,0 +1,48 @@
+.team{
+	position: relative;
+	&:before{
+		content: '';
+		max-width: 125rem;
+		width: 100%;
+		opacity: 0.7;
+		height: 2px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		background: #0073bb;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.img-circle{
+		width: 250px;
+		height: 250px;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+		}
+	}
+	.allert {
+		color: #0073bb;
+		padding-bottom: 20px;
+		position: relative;
+		&:before{
+			content: '';
+			width: 215px;
+			opacity: 0.7;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: #0073bb;
+		}
+	}
+	.row{
+		margin-bottom: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
