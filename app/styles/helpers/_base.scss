@@ -142,3 +142,12 @@ a:hover, a:focus {
 		font-size: 21px;
 	}
 }
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+.IIV::-webkit-media-controls-play-button,
+.IIV::-webkit-media-controls-start-playback-button {
+    opacity: 0;
+    pointer-events: none;
+    width: 5px;
+}

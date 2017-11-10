@@ -90,6 +90,64 @@ a:hover, a:focus {
 .teaser-block{
 	width: 100%;
 	height: calc(100vh - 78px);
-  margin-top: 6rem;;
+	margin-top: 6rem;;
 	overflow: auto;
+}
+
+.ru-page{
+	font-size: 1.7rem;
+	.main-header-content h2{
+		font-size: 2.5rem;
+	}
+	.about__text p{
+		font-size: 18px;
+	}
+	.about__text .allert{
+		font-size: 21px;
+	}
+	.know__item h3{
+		font-size: 2.1rem;
+	}
+	.know__item p{
+		font-size: 1.8rem;
+	}
+	.work__description{
+		font-size: 2.1rem;
+	}
+	.work-animate__list-title{
+		font-size: 1.7rem;
+	}
+	.work-animate__list-item{
+		font-size: 1.7rem;
+	}
+	.token__description p{
+		font-size: 1.8rem;
+	}
+	.token__description .allert{
+		font-size: 21px;
+	}
+	.token__contents h3{
+		font-size: 2.2rem;
+	}
+	.subscribe-form__desk{
+		font-size: 2.1rem;
+	}
+	.roadmap__description{
+		font-size: 2.1rem;
+	}
+	.team p{
+		font-size: 1.8rem;
+	}
+	.team .allert{
+		font-size: 21px;
+	}
+}
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+.IIV::-webkit-media-controls-play-button,
+.IIV::-webkit-media-controls-start-playback-button {
+    opacity: 0;
+    pointer-events: none;
+    width: 5px;
 }
