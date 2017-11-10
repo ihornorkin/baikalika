@@ -20,18 +20,19 @@ doctype html
 html(lang='en')
 	+head
 	+body
-		+header_ru
-		+about_ru
-		+know_ru
-		+work_ru
-		+token_ru
-		.subscribe-input
-			+subscribe_ru('Предпродажа токенов стартует 29 ноября 2017 года', 'Получать уведомления', 'form-subscribe')
-		+roadmap_ru
-		+diagram_ru
-		+team_ru
-		+footer_ru
-		+modal
+		.ru-page
+			+header_ru
+			+about_ru
+			+know_ru
+			+work_ru
+			+token_ru
+			.subscribe-input
+				+subscribe_ru('Предпродажа токенов стартует 29 ноября 2017 года', 'Получать уведомления', 'form-subscribe')
+			+roadmap_ru
+			+diagram_ru
+			+team_ru
+			+footer_ru
+			+modal
 
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
 		+scripts(['app.min.js'])
