@@ -1,6 +1,6 @@
 .team{
 	position: relative;
-	padding-top: 40px;
+	padding: 110px 0 130px;
 	background-image: url('../images/poly-bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -16,13 +16,16 @@
 		color: #3DB7E4;
 		font-size: 17px;
 	}
+	h2{
+		text-align: center;
+	}
 }
 
 .team-container{
 	display: flex;
 	max-width: 945px;
 	flex-wrap: wrap;
-	margin: auto;
+	margin: 70px auto 0;
 }
 .team-block{
 	margin: 15px;
@@ -32,6 +35,11 @@
 	height: 350px;
 	overflow: hidden;
 	text-align: center;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 2px 3px 0 rgba(15, 69, 105, 0.7);
+	box-shadow: 0 2px 3px 0 rgba(15, 69, 105, 0.7);
 	h2{
 		font-size: 20px;
 		color: #ffffff;
