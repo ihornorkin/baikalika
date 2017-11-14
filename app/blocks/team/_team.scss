@@ -96,7 +96,7 @@
 	padding: 40px 25px;
 }
 .team-description{
-	padding: 25px;
+	padding: 25px 20px 25px 25px;
 	text-align: left;
 	color: #ffffff;
 	height: 350px;
@@ -104,8 +104,11 @@
 	position: relative;
 	.fa{
 		position: absolute;
-		bottom: 25px;
-		right: 25px;
+		bottom: 20px;
+		right: 20px;
+	}
+	.team__description{
+		height: 280px;
 	}
 }
 @media(max-width: 768px){

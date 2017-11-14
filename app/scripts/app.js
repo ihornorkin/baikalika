@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'flipclock/compiled/flipclock';
 import '../libs/jQuery-viewport-checker-1.8.8/src/jquery.viewportchecker';
 import 'bootstrap/js/modal';
+import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js';
 
 /* Example import node_modules*/
 /* import 'slick-carousel'; */
@@ -26,6 +27,7 @@ const mainModule = (function () {
 		self.modal = $('#thank-modal');
 		self.menu = $('.site-navigation');
 		self.navigation_teaser = $('.navigation-teaser');
+		self.team_container = $('.team-container');
 		/* self.elementName = $(); */
 		return self;
 	};
@@ -223,6 +225,10 @@ const mainModule = (function () {
 		});
 	};
 
+	const team_container = function() {
+		$('.team__description').mCustomScrollbar();
+	};
+
 	/* Example function
 	 const exampleFunction = function () {
 	 do code
@@ -242,6 +248,7 @@ const mainModule = (function () {
 		input();
 		formSend();
 		menu();
+		team_container();
 		/* exampleFunction(); */
 	};
 
