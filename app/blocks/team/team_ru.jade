@@ -1,59 +1,85 @@
 mixin team_ru()
 	+b.SECTION.team
 		.container
-			.row
-				.col-md-8.col-sm-8
-					h2 Ян Глухов
-					p.allert Соучредитель
-					+e.description
-						p Руководитель ряда крупных и средних производственных предприятий в области машиностроения и металлургии. Владелец группы компаний ИЗТМ (http://iztm.ru). Создатель совместного российско-китайского производства с компанией QINYE HEAVY INDUSTRY CO.,LTD. Основатель девелоперского проекта «Иркутск-Сити» (http://www.irkutskcity.ru).
-				.col-md-4.col-sm-4
-					.img-circle
-						<img src='./images/yan_gluhov-470.png' />
-			.row
-				.col-md-4.col-sm-4
-					.img-circle
-						<img src='./images/dmitry_zuev.jpg' />
-				.col-md-8.col-sm-8
-					h2 ДМИТРИЙ ЗУЕВ
-					p.allert Соучредитель и инвестиционный аналитик проекта.
-					+e.description
-						p Более 17 лет на ведущих должностях в банковских структурах, на стыке финансов и корпоративного сектора. Развитая сеть контактов в кругах руководителей высшего звена в ключевых отраслях экономики в Восточно-Сибирском регионе России.
-			.row
-				.col-md-8.col-sm-8
-					h2 ИЛЬЯ ФРОЛОВ
-					p.allert Исполнительный директор
-					+e.description
-						p Профессиональный управленец с международным опытом работы — PEPSI, COCA-COLA, IKEA, CATERPILLAR. Развитие и фокус на внедрении технологии блокчейн в реальный сектор экономики.
-				.col-md-4.col-sm-4
-					.img-circle
-						<img src='./images/ilya_frolov.jpg' />
-			.row
-				.col-md-4.col-sm-4
-					.img-circle
-						<img src='./images/andrey_nedobylskiy.jpg' />
-				.col-md-8.col-sm-8
-					h2 АНДРЕЙ НЕДОБЫЛЬСКИЙ
-					p.allert Технический директор по блокчейн разработке
-					+e.description
-						p Соучредитель и CTO блокчейн платформы izzz.io. Более 10 лет full stack разработки и высоконагруженных решений в сфере IoT, управления разработками: Artskills.ru, nettech.company, РуКупон.рф, Аукционмашин.рф и многих других.
-			.row
-				.col-md-8.col-sm-8
-					h2 ЕКАТЕРИНА ТАРАСОВА
-					p.allert Директор по связям с общественностью
-					+e.description
-						p Помощник депутата Государственной думы ФС Российской Федерации VII созыва. Ответственная за работу с общественностью, координацию с экологическими фондами и при реализации природоохранных программ. Дипломированный психолог.
-				.col-md-4.col-sm-4
-					.img-circle
-						<img src='./images/ekaterinatarasova.jpg' />
-			.row
-				.col-md-4.col-sm-4
-					.img-circle
-						<img src='./images/lepehova_svetlana-470.png' />
-				.col-md-8.col-sm-8
-					h2 СВЕТЛАНА ЛЕПЕХОВА
-					p.allert Специалист по экологии и биологии
-					+e.description
-						p Доктор биологических наук, индекс Хирша 15. Исследователь международного уровня. Автор 35 изобретений и проектов в области клеточной биологии. Ответственная за биологический баланс воды Байкалика и экологию добычи.
+			h2 Наша команда
+			.team-container
+				.team-block
+					.img-bg
+						<img src='./images/cover-yg.jpg' />
+					.team-block-content
+						.team-info
+							.img-circle
+								<img src='./images/avatar-yg.png' />
+							h2 Ян Глухов
+							p.allert Соучредитель
+						.team-description
+							i.fa.fa-linkedin
+							+e.description
+								p Руководитель ряда крупных и средних производственных предприятий в области машиностроения и металлургии. Владелец группы компаний ИЗТМ (http://iztm.ru). Создатель совместного российско-китайского производства с компанией QINYE HEAVY INDUSTRY CO.,LTD. Основатель девелоперского проекта «Иркутск-Сити» (http://www.irkutskcity.ru).
+				.team-block
+					.img-bg
+						<img src='./images/cover-dz.jpg' />
+					.team-block-content
+						.team-info
+							.img-circle
+								<img src='./images/avatar-dz.png' />
+							h2 ДМИТРИЙ ЗУЕВ
+							p.allert Соучредитель и инвестиционный аналитик проекта.
+						.team-description
+							i.fa.fa-linkedin
+							+e.description
+								p Более 17 лет на ведущих должностях в банковских структурах, на стыке финансов и корпоративного сектора. Развитая сеть контактов в кругах руководителей высшего звена в ключевых отраслях экономики в Восточно-Сибирском регионе России.
+				.team-block
+					.img-bg
+						<img src='./images/cover-if.jpg' />
+					.team-block-content
+						.team-info
+							.img-circle
+								<img src='./images/avatar-if.png' />
+							h2 ИЛЬЯ ФРОЛОВ
+							p.allert Исполнительный директор
+						.team-description
+							i.fa.fa-linkedin
+							+e.description
+								p Профессиональный управленец с международным опытом работы — PEPSI, COCA-COLA, IKEA, CATERPILLAR. Развитие и фокус на внедрении технологии блокчейн в реальный сектор экономики.
+				.team-block
+					.img-bg
+						<img src='./images/cover-an.jpg' />
+					.team-block-content
+						.team-info
+							.img-circle
+								<img src='./images/avatar-an.png' />
+							h2 АНДРЕЙ НЕДОБЫЛЬСКИЙ
+							p.allert Технический директор по блокчейн разработке
+						.team-description
+							i.fa.fa-linkedin
+							+e.description
+								p Соучредитель и CTO блокчейн платформы izzz.io. Более 10 лет full stack разработки и высоконагруженных решений в сфере IoT, управления разработками: Artskills.ru, nettech.company, РуКупон.рф, Аукционмашин.рф и многих других.
+				.team-block
+					.img-bg
+						<img src='./images/cover-kt.jpg' />
+					.team-block-content
+						.team-info
+							.img-circle
+								<img src='./images/avatar-kt.png' />
+							h2 ЕКАТЕРИНА ТАРАСОВА
+							p.allert Директор по связям с общественностью
+						.team-description
+							i.fa.fa-linkedin
+							+e.description
+								p Помощник депутата Государственной думы ФС Российской Федерации VII созыва. Ответственная за работу с общественностью, координацию с экологическими фондами и при реализации природоохранных программ. Дипломированный психолог.
+				.team-block
+					.img-bg
+						<img src='./images/cover-sl.jpg' />
+					.team-block-content
+						.team-info
+							.img-circle
+								<img src='./images/avatar-sl.png' />
+							h2 СВЕТЛАНА ЛЕПЕХОВА
+							p.allert Специалист по экологии и биологии
+						.team-description
+							i.fa.fa-linkedin
+							+e.description
+								p Доктор биологических наук, индекс Хирша 15. Исследователь международного уровня. Автор 35 изобретений и проектов в области клеточной биологии. Ответственная за биологический баланс воды Байкалика и экологию добычи.
 
 
