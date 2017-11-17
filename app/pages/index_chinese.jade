@@ -1,0 +1,37 @@
+include /blocks/head/head
+include /blocks/body/body
+include /blocks/scripts/scripts
+include /blocks/header/header_ch
+include /blocks/footer/footer_ch
+include /blocks/about/about_ch
+include /blocks/know/know_ch
+include /blocks/work/work_ch
+include /blocks/token/token_ch
+include /blocks/subscribe/subscribe_ch
+include /blocks/roadmap/roadmap_ch
+include /blocks/diagram/diagram_ch
+include /blocks/modal/modal_ch
+include /blocks/team/team_ch
+
+block head
+	- var pageTitle = 'Baikalika';
+
+doctype html
+html(lang='en')
+	+head
+	+body
+		+header_ch
+		+about_ch
+		+know_ch
+		+work_ch
+		+token_ch
+		.subscribe-input
+			+subscribe_ch('预售启动于2017 年11 月29日', '关注我们的项目更新')
+		+roadmap_ch
+		+diagram_ch
+		+team_ch
+		+footer_ch
+		+modal_ch
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		+scripts(['app.min.js'])

@@ -1,0 +1,25 @@
+include ../subscribe/subscribe_ch
+
+mixin footer_ch()
+	+b.FOOTER.footer(id="contacts")
+		.container
+			.row
+				+subscribe_ch('注册参加预售', '如果您对我们可以提前购买BAIKALIKA代币的特殊期权感兴趣，为确保您能够参与代币预售，请提交您的电子邮件地址和您计划购买的大致的代币数量。')
+			.row
+				.col-md-12
+					+b.UL.politics
+				.col-md-12
+					span.copy © 2017. Baikalika
+					+b.UL.social
+						+e.LI.__link
+							a(href="https://medium.com/@fortunecoin" target="_blank")
+								i.fa.fa-medium
+						+e.LI.__link
+							a(href="https://www.facebook.com/fortunecoin/" target="_blank")
+								i.fa.fa-facebook
+						+e.LI.__link
+							a(href="https://twitter.com/fortunecoin" target="_blank")
+								i.fa.fa-twitter
+						+e.LI.__link
+							a(href="https://t.me/fortunecoin" target="_blank")
+								i.fa.fa-telegram

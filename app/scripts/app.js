@@ -16,6 +16,7 @@ const mainModule = (function () {
 		self.document = $('body, html');
 		self.timer = $('#timer');
 		self.timer_ru = $('#timer_ru');
+		self.timer_ch = $('#timer_ch');
 		self.tags = $('#tags li');
 		self.diagram = $('#diagram');
 		self.diagramWrapper = $('.diagram__wrapper');
@@ -76,6 +77,28 @@ const mainModule = (function () {
 		});
 		let words = ['Дни', 'Часы', 'Минуты', 'Секунды'];
 		$('#timer_ru .flip-clock-label').each(function (i) {
+			$(this).text(words[i]);
+		});
+	};
+
+	const timer_ch = function () {
+
+		/* Countdown to current date*/
+		/* Set current date */
+		let pastDate  = new Date(2018, 0, 11, 10, 0, 0, 0);
+		/* Grab the current date */
+		let currentDate = new Date();
+		let diff = pastDate.getTime() / 1000 - currentDate.getTime() / 1000;
+		if (diff < 0) {
+			diff = 0;
+		}
+
+		elements.timer_ch.FlipClock(diff, {
+			clockFace: 'DailyCounter',
+			countdown: true
+		});
+		let words = ['天', '小时', '分钟', '秒'];
+		$('#timer_ch .flip-clock-label').each(function (i) {
 			$(this).text(words[i]);
 		});
 	};
@@ -240,6 +263,7 @@ const mainModule = (function () {
 		elements = cacheDOM();
 		timer();
 		timer_ru();
+		timer_ch();
 		diagram();
 		rectangle();
 		smooth();

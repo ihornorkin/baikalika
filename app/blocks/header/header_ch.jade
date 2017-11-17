@@ -1,0 +1,46 @@
+include ../subscribe/subscribe_ch
+
+mixin header_ch()
+	+b.HEADER(id="home")
+		.site-navigation
+			.container
+				.row
+						.col-md-2
+							.logo
+						.col-md-3.col-sm-6
+							+b.UL.social
+								+e.LI.__link
+									a(href="https://medium.com/@fortunecoin" target="_blank")
+										i.fa.fa-medium
+								+e.LI.__link
+									a(href="https://www.facebook.com/fortunecoin/" target="_blank")
+										i.fa.fa-facebook
+								+e.LI.__link
+									a(href="https://twitter.com/fortunecoin" target="_blank")
+										i.fa.fa-twitter
+								+e.LI.__link
+									a(href="https://t.me/fortunecoin" target="_blank")
+										i.fa.fa-telegram
+						.col-md-6.col-sm-6
+							+b.NAV.navigations
+								+e.A.__link(href = '#home') 首页
+								+e.A.__link(href = '#tokens') 代币
+								+e.A.__link(href = '#roadmap') 项目蓝图
+								+e.A.__link(href = '#contacts') 联系我们
+						.col-md-1.language-wrap
+							+b.UL.language
+								+e.LI.__element-toggle
+									a(href='/') EN
+								+e.LI.__element-toggle
+									a(href='Baikalika-teaser-RU.pdf') РУ
+								+e.LI.__element-toggle.__element-toggle-active
+									a(href='index_chinese.html') 中文
+		.main-header-content
+			.container
+				.row
+					.col-md-12
+						.text-logo
+						h2 贝加尔湖水开采和分销的区块链技术
+					.col-md-12
+						+subscribe_ch('有兴趣购买BAIKALIKA代币吗？')
+						button.btn.btn-two 下载项目白皮书
